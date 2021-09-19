@@ -1,4 +1,4 @@
-# CS105-Project
+# CS/EC528-Project
 
 ## Mentor
 Professor Orran Krieger:
