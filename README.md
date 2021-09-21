@@ -1,6 +1,12 @@
 # CS/EC528-Project
 
 ## Mentor
+Dan Hyland:
+dan.hyland@twosigma.com
+
+Edward Yang:
+edward.yang@twosigma.com
+
 Professor Orran Krieger:
 okrieg@bu.edu
 
