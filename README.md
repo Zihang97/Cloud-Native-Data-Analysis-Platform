@@ -10,6 +10,8 @@ Goals:
 - Implement permission and access controls for end-users to ensure data security and independence
 - Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives
 
+** **
+
 ## 2. Users/Personas Of The Project:
 Piggy Platform will be used by data scientists from companies and government institutions.
 
@@ -46,11 +48,14 @@ High-level outline of the solution:
 - Permission and Access Control: Provide security solutions between services and external access
 - Front-end UI: HTML/CSS/JS for webpage and  Python Flask for web application
 
+** **
 ## 5. Acceptance criteria
 Minimum acceptance criteria is a self service portal with a user friendly UI that can help end-users operate pipeline and analyze data. 
 Stretch goals include:
 - Use this project to analyze Boston Open Data
 - Provide several compute and size options
+
+** **
 
 ## 6.  Release Planning:
 Release #1 (due by Week 5):
@@ -68,6 +73,8 @@ Security and access
 
 Release #4 (due by Week 15):
 Final Product
+
+** **
 
 ## Mentor
 Dan Hyland:
