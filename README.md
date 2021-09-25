@@ -54,8 +54,7 @@ Stretch goals include:
 
 ## 6.  Release Planning:
 Release #1 (due by Week 5):
-Data extraction and storage
-
+Data extraction and storage  
 When end-users decide to upload the data, we can extract the data from their buckets and store them in our built databases.
 
 Release #2 (due by Week 9):
