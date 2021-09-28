@@ -5,15 +5,21 @@
 Self Service Cloud-Native Data Analysis Platform (referred as “Piggy Platform” from now on) is a platform for arbitrary end-users to manipulate and analyze cloud data quickly and efficiently.
 
 Goals:
-- Providing a platform for a modern ETL (Extract/Transform/Load)
-- Provide users with flexible options for data analysis with several data science platforms (Jupyter/Pandas/etc)
-- Implement permission and access controls for end-users to ensure data security and independence
-- Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives
+- Providing a platform for modern ETL (Extract/Transform/Load) pipeline  
+- Provide users ability to analyze data by running python codes  
+- Implement permission and access controls for end-users to ensure data security and independence  
+- Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives  
+
 
 ** **
 
 ## 2. Users/Personas Of The Project:
 Piggy Platform will be used by data scientists from companies and government institutions.
+A user who needs to run Python codes to analyze data stored in a remote S3 bucket  
+A user who needs to run machine learning models in Tensorflow/Pytorch to predict stock trends based on previous stock data stored in a remote GCS bucket  
+A user who wants to use our portal to store data in our database from local computer for further analysis  
+A user who needs to use sql to query and search a specific item in data stored in a remote S3 bucket  
+
 
 It doesn’t target:
 - End-users who need to deal with extremely large datasets
@@ -26,17 +32,14 @@ It doesn’t target:
 ## 3.   Scope and Features Of The Project:
 
 Piggy Platform
-- Presents a self service portal for end-users
-  - Select compute type (RAM/CPU/GPU/etc)
-  - Select data science platform to use (Jupyter, pandas, etc)
-  - Add/Change/Delete pipelines
-- Provides a front-end UI for end-users to interface with
-- Provides storage solution for user data
-- Provides tools to transform and analyze data
-- Ability for multiple users to use simultaneously and independently
+- Provides storage for user data which is able to pull data from one or multiple source 
+- Provides ability to run python codes to transform and analyze data
+- Provides support for sql commands to query the database
 - Security: user data are secure and independent
 - Permission/Access: only allowed users can access Piggy Platform
-- Scalability: can scale to large number of users
+- Provides a front-end UI for endpipelines-users to interface with
+- Ability for multiple users to use simultaneously and independently
+
 
 ** **
 
