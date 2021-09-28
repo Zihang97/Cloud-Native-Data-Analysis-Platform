@@ -2,7 +2,7 @@
 
 ## 1. Vision and Goals Of The Project:
 
-Self Service Cloud-Native Data Analysis Platform (referred as “Piggy Platform” from now on) is a platform for arbitrary end-users to manipulate and analyze cloud data quickly and efficiently.
+Self Service Cloud-Native Data Analysis Platform (referred as “Piggy Platform” from now on) is a platform for data scientists to ingest and analyze cloud data quickly and efficiently.
 
 Goals:
 - Providing a platform for modern ETL (Extract/Transform/Load) pipeline  
