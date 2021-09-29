@@ -86,14 +86,11 @@ Final Product and report
 
 ** **
 ## Team
-Ibrahim Chand
-Zihang Jiang
-Anish Yennapusa
-Ze Yu
+- Ibrahim Chand
+- Zihang Jiang
+- Anish Yennapusa
+- Ze Yu
 
 ## Mentors
-Dan Hyland:
-dan.hyland@twosigma.com
-
-Edward Yang:
-edward.yang@twosigma.com
+- Dan Hyland: dan.hyland@twosigma.com
+- Edward Yang: edward.yang@twosigma.com
