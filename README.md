@@ -73,7 +73,7 @@ Data extraction and storage
 When end-users decide to upload the data, we can extract the data from their buckets and store them in our built databases.
 
 Release #2 (due by Week 9):
-Data transformation & analysis
+Data transformation
 
 Release #3 (due by Week 11):
 Incorporation of standardized data science software.
@@ -81,23 +81,19 @@ Incorporation of standardized data science software.
 Release #4 (due by Week 13):
 Security and access
 
-Release #4 (due by Week 15):
-Final Product
+Release #5 (due by Week 15):
+Final Product and report
 
 ** **
+## Team
+Ibrahim Chand
+Zihang Jiang
+Anish Yennapusa
+Ze Yu
 
-## Mentor
+## Mentors
 Dan Hyland:
 dan.hyland@twosigma.com
 
 Edward Yang:
 edward.yang@twosigma.com
-
-Professor Orran Krieger:
-okrieg@bu.edu
-
-Professor Peter Desnoyers:
-pjd-nu or pjd@ccs.neu.edu
-
-Anqi Guo:
-anqianqi1
