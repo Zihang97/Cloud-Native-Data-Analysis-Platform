@@ -12,7 +12,6 @@ Goals:
                 - Leverage standardized data science software (tensorflow, BigQuery etc.)  
 - Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives  
 
-
 ** **
 
 ## 2. Users/Personas Of The Project:
@@ -27,7 +26,6 @@ It doesn’t target:
 - End-users who follow standard pipeline and don’t need customized solution
 - Institutions with unique use cases considering the development of their own service
 
-
 ** **
 
 ## 3.   Scope and Features Of The Project:
@@ -39,7 +37,6 @@ It doesn’t target:
 - Provides support for sql commands to query the database
 - Security: only select users are able to access and modify the data.
 - Ability for multiple users to use simultaneously and independently
-
 
 ** **
 
@@ -53,6 +50,7 @@ Strech Goals:
 - Front-end UI: HTML/CSS/JS for webpage and  Python Flask for web application
 
 ** **
+
 ## 5. Acceptance criteria
 Minimum acceptance criteria is a self service platform that can:  
 - Extract data from a cloud storage service and return it.
@@ -84,10 +82,13 @@ Security and access
 Release #5 (due by Week 15):
 Final Product and report
 
+** **
+
 ## Demos
 1. [Demo #1](https://drive.google.com/file/d/1FgMqyUCm2EyUkl9hNm3q3urPOcZtdsnm/view?usp=sharing)
 
 ** **
+
 ## Mentors
 - Dan Hyland: dan.hyland@twosigma.com
 - Edward Yang: edward.yang@twosigma.com
