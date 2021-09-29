@@ -17,10 +17,10 @@ Goals:
 
 ## 2. Users/Personas Of The Project:
 The platform will be used by data scientists from companies and government institutions.
-A user who needs to run Python codes to analyze data stored in a remote S3 bucket  
-A user who needs to run machine learning models in Tensorflow/Pytorch to predict stock trends based on previous stock data stored in a remote GCS bucket  
-A user who wants to preprocess their data using numeric python and load to a remote S3 bucket.
-A user who needs to use sql to query and search a specific item in data stored in a remote S3 bucket  
+- A user who needs to run Python codes to analyze data stored in a remote S3 bucket  
+- A user who needs to run machine learning models in Tensorflow/Pytorch to predict stock trends based on previous stock data stored in a remote GCS bucket  
+- A user who wants to preprocess their data using numeric python and load to a remote S3 bucket.
+- A user who needs to use sql to query and search a specific item in data stored in a remote S3 bucket  
 
 
 It doesn’t target:
