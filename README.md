@@ -2,22 +2,24 @@
 
 ## 1. Vision and Goals Of The Project:
 
-Self Service Cloud-Native Data Analysis Platform (referred as “Piggy Platform” from now on) is a platform for data scientists to ingest and analyze cloud data quickly and efficiently.
+Self Service Cloud-Native Data Analysis Platform is a platform for data scientists to ingest and analyze data on the cloud based on user specific requirements.
 
 Goals:
 - Providing a platform for modern ETL (Extract/Transform/Load) pipeline  
-- Provide users ability to analyze data by running python codes  
-- Implement permission and access controls for end-users to ensure data security and independence  
+- Develop a data science infrastructure within the cloud that can:  
+                - Pull data from a bucket and return it to that   
+                - Transform the data  
+                - Leverage standardized data science software (tensorflow, BigQuery etc.)  
 - Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives  
 
 
 ** **
 
 ## 2. Users/Personas Of The Project:
-Piggy Platform will be used by data scientists from companies and government institutions.
+The platform will be used by data scientists from companies and government institutions.
 A user who needs to run Python codes to analyze data stored in a remote S3 bucket  
 A user who needs to run machine learning models in Tensorflow/Pytorch to predict stock trends based on previous stock data stored in a remote GCS bucket  
-A user who wants to use our portal to store data in our database from local computer for further analysis  
+A user who wants to preprocess their data using numeric python and load to a remote S3 bucket.
 A user who needs to use sql to query and search a specific item in data stored in a remote S3 bucket  
 
 
@@ -31,13 +33,12 @@ It doesn’t target:
 
 ## 3.   Scope and Features Of The Project:
 
-Piggy Platform
-- Provides storage for user data which is able to pull data from one or multiple source 
+- Self-service allocation based on the description of the detailed pipeline component needs.
+- Leverages standardized software to analyse data.
+- Provides storage for user data which is able to pull data from one or multiple source
 - Provides ability to run python codes to transform and analyze data
 - Provides support for sql commands to query the database
-- Security: user data are secure and independent
-- Permission/Access: only allowed users can access Piggy Platform
-- Provides a front-end UI for endpipelines-users to interface with
+- Security: only select users are able to access and modify the data.
 - Ability for multiple users to use simultaneously and independently
 
 
@@ -48,15 +49,22 @@ High-level outline of the solution:
 - Storage for Data: cloud-native technologies like AWS S3/GCP GCS/ DynamoDB/Spanner
 - Computing Engine: use existing IaaS solutions like AWS EC2 or GCP (can also use Container solution) 
 - Data Analysis: use data analysis platforms like Jupyter and Pandas to support machine learning codes of Tensorflow/Pytorch. (We could start simple with sklearn just to test our pipeline)
-- Permission and Access Control: Provide security solutions between services and external access
+- Permission and Access Control: Provide security solutions between services and external access (Cloud IAM)
+Strech Goals:
 - Front-end UI: HTML/CSS/JS for webpage and  Python Flask for web application
 
 ** **
 ## 5. Acceptance criteria
-Minimum acceptance criteria is a self service portal with a user friendly UI that can help end-users operate pipeline and analyze data. 
+Minimum acceptance criteria is a self service platform that can:  
+- Extract data from a cloud storage service and return it.
+- Support standardised data science software (tensorflow, BigQuery etc).
+- Allocate storage and computation resources to ETL pipelnes based on user requirement.
+
+
 Stretch goals include:
 - Use this project to analyze Boston Open Data
 - Provide several compute and size options
+- Build a user friendly UI to interact with the platform
 
 ** **
 
@@ -69,7 +77,7 @@ Release #2 (due by Week 9):
 Data transformation & analysis
 
 Release #3 (due by Week 11):
-User Interface
+Incorporation of standardized data science software.
 
 Release #4 (due by Week 13):
 Security and access
