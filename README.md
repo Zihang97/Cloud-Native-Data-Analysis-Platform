@@ -48,7 +48,7 @@ High-level outline of the solution:
 - Storage for Data: cloud-native technologies like AWS S3/GCP GCS/ DynamoDB/Spanner
 - Computing Engine: use existing IaaS solutions like AWS EC2 or GCP (can also use Container solution) 
 - Data Analysis: use data analysis platforms like Jupyter and Pandas to support machine learning codes of Tensorflow/Pytorch. (We could start simple with sklearn just to test our pipeline)
-- Permission and Access Control: Provide security solutions between services and external access (Cloud IAM)
+- Permission and Access Control: Provide security solutions between services and external access (Cloud IAM).  
 Strech Goals:
 - Front-end UI: HTML/CSS/JS for webpage and  Python Flask for web application
 
