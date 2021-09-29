@@ -84,13 +84,16 @@ Security and access
 Release #5 (due by Week 15):
 Final Product and report
 
-** **
-## Team
-- Ibrahim Chand
-- Zihang Jiang
-- Anish Yennapusa
-- Ze Yu
+## Demos
+1. [Demo #1](https://drive.google.com/file/d/1FgMqyUCm2EyUkl9hNm3q3urPOcZtdsnm/view?usp=sharing)
 
+** **
 ## Mentors
 - Dan Hyland: dan.hyland@twosigma.com
 - Edward Yang: edward.yang@twosigma.com
+
+## Team
+- Ibrahim Chand: ichand@bu.edu
+- Zihang Jiang: jzh15@bu.edu
+- Anish Yennapusa: anishry@bu.edu
+- Ze Yu: zey@bu.edu
