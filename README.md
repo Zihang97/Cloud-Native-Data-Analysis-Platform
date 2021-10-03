@@ -68,26 +68,21 @@ Stretch goals include:
 ** **
 
 ## 6.  Release Planning:
-Release #1 (due by Week 5):
-Data extraction and storage  
-When end-users decide to upload the data, we can extract the data from their buckets and store them in our built databases.
+Release #1 (due by Week 5) - [Demo #1](https://drive.google.com/file/d/1oXEU7WKBcbGg8-MOb6BIO_EFvi4C5_9g/view?usp=sharing):
+- Data extraction and storage  
+- When end-users decide to upload the data, we can extract the data from their buckets and store them in our built databases.
 
 Release #2 (due by Week 9):
-Data transformation
+- Data transformation
 
 Release #3 (due by Week 11):
-Incorporation of standardized data science software.
+- Incorporation of standardized data science software.
 
 Release #4 (due by Week 13):
-Security and access
+- Security and access
 
 Release #5 (due by Week 15):
-Final Product and report
-
-** **
-
-## Demos
-1. [Demo #1](https://drive.google.com/file/d/1FgMqyUCm2EyUkl9hNm3q3urPOcZtdsnm/view?usp=sharing)
+- Final Product and report
 
 ** **
 
