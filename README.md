@@ -2,15 +2,15 @@
 
 ## 1. Vision and Goals Of The Project:
 
-Self Service Cloud-Native Data Analysis Platform is a platform for data scientists to ingest and analyze data on the cloud based on user specific requirements.
+Self Service Cloud-Native Data Analysis Platform is a platform for data scientists to ingest and analyze data on the cloud using varying levels of managed services based on user requirements.
 
 Goals:
-- Providing a platform for modern ETL (Extract/Transform/Load) pipeline  
-- Develop a data science infrastructure within the cloud that can:  
-                - Pull data from a bucket and return it to that   
-                - Transform the data  
-                - Leverage standardized data science software (tensorflow, BigQuery etc.)  
-- Present decisions made throughout the development process along with tradeoffs between the current approach and available alternatives  
+- Select tools and services for each component (Compute, Storage, Data Analysis, Security, and UI) based on tradeoffs of using managed services versus custom solutions
+- Develop data science infrastructure within the cloud that can:
+  - Pull and store data in cloud storage solution
+  - Perform transform operations on data
+  - Leverage standardized data science softare (Tensorflow, BigQuery, etc.)
+  - 
 
 ** **
 
