@@ -10,7 +10,6 @@ Goals:
   - Pull and store data in cloud storage solution
   - Perform transform operations on data
   - Leverage standardized data science softare (Tensorflow, BigQuery, etc.)
-  - 
 
 ** **
 
