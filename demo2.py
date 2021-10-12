@@ -1,4 +1,5 @@
 import sqlite3
+import timeit
 
 conn = sqlite3.connect('demo2.db')
 c = conn.cursor()
@@ -18,13 +19,17 @@ EXITS		VARCHAR(10)
 )''')
 conn.commit()
 print('created the table.')
+
+start = timeit.default_timer()
 file_data = [i.strip('\n').split(',') for i in open('turnstile_211009.txt')]
 c.executemany('INSERT INTO Ride VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', file_data)
+stop = timeit.default_timer()
 conn.commit()
 c.execute('''SELECT COUNT(*) FROM Ride''')
-print(c.fetchall()[0][0], 'rows of data imported')
-c.execute('''SELECT * FROM Ride LIMIT 10''')
-print('preview:')
-for i in c.fetchall():
-	print(i)
+print(c.fetchall()[0][0], 'rows of data imported in', stop-start, 's')
+
+#c.execute('''SELECT * FROM Ride LIMIT 10''')
+#print('preview:')
+#for i in c.fetchall():
+#	print(i)
 
