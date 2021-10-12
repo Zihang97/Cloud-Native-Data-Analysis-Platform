@@ -22,5 +22,9 @@ file_data = [i.strip('\n').split(',') for i in open('turnstile_211009.txt')]
 c.executemany('INSERT INTO Ride VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', file_data)
 conn.commit()
 c.execute('''SELECT COUNT(*) FROM Ride''')
-print(c.fetchall()[0], 'rows of data imported')
+print(c.fetchall()[0][0], 'rows of data imported')
+c.execute('''SELECT * FROM Ride LIMIT 10''')
+print('preview:')
+for i in c.fetchall():
+	print(i)
 
