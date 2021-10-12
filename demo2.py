@@ -27,9 +27,11 @@ stop = timeit.default_timer()
 conn.commit()
 c.execute('''SELECT COUNT(*) FROM Ride''')
 print(c.fetchall()[0][0], 'rows of data imported in', stop-start, 's')
-
-#c.execute('''SELECT * FROM Ride LIMIT 10''')
-#print('preview:')
+start = timeit.default_timer()
+query = '''SELECT * FROM Ride'''
+c.execute(query)
+stop = timeit.default_timer()
+print('query',query,'takes', stop-start, 's')
 #for i in c.fetchall():
 #	print(i)
 
