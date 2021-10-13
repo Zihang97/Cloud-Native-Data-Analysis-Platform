@@ -3,7 +3,7 @@ import timeit
 
 conn = sqlite3.connect('demo2.db')
 c = conn.cursor()
-c.execute('''DROP TABLE Ride''')
+c.execute('''DROP TABLE IF EXISTS Ride''')
 c.execute('''CREATE TABLE Ride(
 CA         	VARCHAR(10),
 UNIT        VARCHAR(10),
@@ -21,7 +21,7 @@ conn.commit()
 print('created the table.')
 
 start = timeit.default_timer()
-file_data = [i.strip('\n').split(',') for i in open('turnstile_211009.txt')]
+file_data = [i.strip('\n').split(',') for i in open('ridership.csv')]
 c.executemany('INSERT INTO Ride VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', file_data)
 stop = timeit.default_timer()
 conn.commit()
