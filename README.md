@@ -2,43 +2,34 @@
 
 ## 1. Vision and Goals Of The Project:
 
-Self Service Cloud-Native Data Analysis Platform is a platform for data scientists to ingest and analyze data on the cloud using varying levels of managed services based on user requirements.
+The Self Service Cloud-Native Data Analysis Platform is a project to explore the tradeoffs of using varying levels of managed services when building an end-to-end data analysis platform.
 
 Goals:
-- Select tools and services for each component (Compute, Storage, Data Analysis, Security, and UI) based on tradeoffs of using managed services versus custom solutions
-- Develop data science infrastructure within the cloud that can:
-  - Pull and store data in cloud storage solution
-  - Perform transform operations on data
-  - Leverage standardized data science softare (Tensorflow, BigQuery, etc.)
+- Develop infrastructure that can handle an end-to-end data analysis platform use case:
+  - Pull and store data in a storage solution
+  - Perform transform operations and analysis on data
+  - Leverage standardized data science software (Tensorflow, BigQuery, etc.)
+- Develop using tools and services for each component (Compute, Storage, Data Analysis, Security, and UI) that balance the tradeoffs of managed solutions
 
 ** **
 
 ## 2. Users/Personas Of The Project:
-The platform will be used by data scientists from companies and government institutions.
-- A user who wants to extract data from a remote S3 bucket
-- A user who needs to query and search a specific item in the data
-- A user who wants to compute the average of multiple data
-- A user who wants to use linear regression to find relationship between two factors of the data
-- A user who needs to use machine learning models to draw inferences about the data
- 
-
+The platform will be used by data scientists with end-to-end data analysis use cases utilizing cloud technologies.
 
 It doesn’t target:
-- End-users who need to deal with extremely large datasets
-- End-users who follow standard pipeline and don’t need customized solution
-- Institutions with unique use cases considering the development of their own service
+- Data scientists with strict security and compliance requirements
+- Data scientists with pre-defined technology requirements 
 
 ** **
 
 ## 3.   Scope and Features Of The Project:
-
-- Self-service allocation based on the description of the detailed pipeline component needs.
-- Leverages standardized software to analyse data.
-- Provides storage for user data which is able to pull data from one or multiple source
-- Provides ability to run python codes to transform and analyze data
-- Provides support for sql commands to query the database
-- Security: only select users are able to access and modify the data.
-- Ability for multiple users to use simultaneously and independently
+- Programmatic infrastructure management and orchestration using Terraform
+- Leverage standardized software to perform data analysis
+- Provide storage solutions for user data to push/pull data from one or more sources
+- Support ability to run scripts (Python) to transform and analyze data
+- Support SQL commands to query database
+- Security: Authorization settings to control which users can access and modify data
+- Ability for multiple users to work simultaneously and independently
 
 ** **
 
