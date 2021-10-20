@@ -72,7 +72,7 @@ Release #1 (due by Week 5) - [Demo #1](https://drive.google.com/file/d/1oXEU7WKB
 - Data extraction and storage  
 - When end-users decide to upload the data, we can extract the data from their buckets and store them in our built databases.
 
-Release #2 (due by Week 9):
+Release #2 (due by Week 9) - [Demo #2](https://drive.google.com/file/d/1xs2OyQpqQeajm7Ldirc7uzXbDh8Poh07/view?usp=sharing):
 - Data transformation
 
 Release #3 (due by Week 11):
