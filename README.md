@@ -69,11 +69,12 @@ Release #2 (due by Week 9) - [Demo #2](https://drive.google.com/file/d/1xs2OyQpq
 
 Release #3 (due by Week 11) - [Demo #3](https://drive.google.com/file/d/1hF1LRp55zbktaoLSnjxkeOUE3OAvDfsb/view?usp=sharing):
 - Launch a Jupyter Notebook on an EC2 container via Terraform
-- Use Terraform to create storage solutions and manage data
+- Use Terraform to create storage buckets
 - Expand on data analysis functionality
 
 Release #4 (due by Week 13):
 - Implement security and access functionality in platform
+- Use Terraform to extract and upload data in storage
 - Expand on platform functionality
 
 Release #5 (due by Week 15):
