@@ -72,7 +72,7 @@ Release #3 (due by Week 11) - [Demo #3](https://drive.google.com/file/d/1hF1LRp5
 - Use Terraform to create storage buckets
 - Expand on data analysis functionality
 
-Release #4 (due by Week 13):
+Release #4 (due by Week 13) - [Demo #4](https://drive.google.com/file/d/1tiLg_HV-MpDBvXvfWm1Wq53fKqQ_VGcF/view?usp=sharing):
 - Implement security and access functionality in platform
 - Use Terraform to extract and upload data in storage
 - Expand on platform functionality
