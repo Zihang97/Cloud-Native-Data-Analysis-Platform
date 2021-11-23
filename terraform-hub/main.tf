@@ -80,10 +80,6 @@ resource "aws_volume_attachment" "hub_instance" {
   force_detach = true
 }
 
-resource "aws_s3_bucket" "central_bucket" {
-  bucket = "${var.central_bucket_name}"
-  acl    = "private"
-}
 
 resource "aws_s3_bucket" "customer_bucket" {
   bucket = "${var.customer_bucket_name}"

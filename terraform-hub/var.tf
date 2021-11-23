@@ -11,9 +11,9 @@ variable "service" {
 }
 
 variable "central_bucket_name" {
-    default = "ec528-central-bucket-terraform"
+    default = "common-repo-cloud"
 }
 
 variable "customer_bucket_name" {
-    default = "ec528-customer-bucket-terraform"
+    default = "user3-cloud"
 }
