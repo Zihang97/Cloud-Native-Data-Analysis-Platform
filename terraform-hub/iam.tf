@@ -22,7 +22,7 @@ resource "aws_iam_role_policy" "user_role_policy" {
             {
                 Effect = "Allow"
                 Action = ["s3:*"]
-                Resource = "arn:aws:s3:::528-user-bucket"
+                Resource = "arn:aws:s3:::${var.customer_bucket_name}"
             },
             {
                 Effect = "Allow"
@@ -30,7 +30,7 @@ resource "aws_iam_role_policy" "user_role_policy" {
                     "s3:ListBucket",
                     "s3:GetObject",
                 ]
-                Resource = "arn:aws:s3:::528-central-bucket"
+                Resource = "arn:aws:s3:::${var.central_bucket_name}"
             }
         ]
     })

@@ -9,3 +9,11 @@ variable "instance_type" {
 variable "service" {
     default = "hub_instance"
 }
+
+variable "central_bucket_name" {
+    default = "ec528-central-bucket-terraform"
+}
+
+variable "customer_bucket_name" {
+    default = "ec528-customer-bucket-terraform"
+}
