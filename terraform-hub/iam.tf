@@ -30,12 +30,14 @@ resource "aws_iam_role_policy" "user_role_policy" {
                     "s3:ListBucket",
                     "s3:GetObject",
                 ]
-                Resource = "arn:aws:s3:::${var.central_bucket_name}"
+                Resource = [
+                    "arn:aws:s3:::${var.central_bucket_name}",
+                    "arn:aws:s3:::${var.central_bucket_name}/*",
+                ]
             }
         ]
     })
 }
-
 resource "aws_iam_instance_profile" "instance_profile" {
     name = "instance_profile"
     role = "${aws_iam_role.user_role.name}"
