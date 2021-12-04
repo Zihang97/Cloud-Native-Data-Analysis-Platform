@@ -16,6 +16,13 @@ sudo mkdir /anaconda3
 sudo mount /dev/sdb /anaconda3
 sudo chown -R ec2-user:ec2-user /anaconda3
 sudo echo "UUID=$(lsblk -nr -o UUID,MOUNTPOINT | grep "/anaconda3" | cut -d ' ' -f 1) /anaconda3 xfs defaults,nofail 1 2" >> /etc/fstab
+# Create Unix User
+sudo useradd -s /bin/bash -m -d /home/user -g root user
+echo "user:password1" | chpasswd
+echo 'user ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
+sudo sed -i '61s/.*/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sudo sed -i '63s/.*/#PasswordAuthentication no/' /etc/ssh/sshd_config
+sudo systemctl restart sshd.service
 # Install Anaconda
 wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh -O /home/ec2-user/anaconda.sh &&
     bash /home/ec2-user/anaconda.sh -u -b -p /anaconda3 &&

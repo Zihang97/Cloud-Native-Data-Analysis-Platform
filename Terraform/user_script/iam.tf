@@ -22,7 +22,10 @@ resource "aws_iam_role_policy" "user_role_policy" {
             {
                 Effect = "Allow"
                 Action = ["s3:*"]
-                Resource = "arn:aws:s3:::${var.customer_bucket_name}"
+                Resource = [
+                    "arn:aws:s3:::${var.customer_bucket_name}",
+                    "arn:aws:s3:::${var.customer_bucket_name}/*"
+                ]
             },
             {
                 Effect = "Allow"
