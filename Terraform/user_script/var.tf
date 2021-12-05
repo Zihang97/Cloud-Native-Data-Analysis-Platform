@@ -17,3 +17,15 @@ variable "central_bucket_name" {
 variable "customer_bucket_name" {
     default = "user4-cloud"
 }
+
+variable "username" {
+    default = "user"
+}
+
+variable "tag_name" {
+    default = "Name"
+}
+
+variable "tag_value" {
+    default = "EC2_Intance_Name"
+}

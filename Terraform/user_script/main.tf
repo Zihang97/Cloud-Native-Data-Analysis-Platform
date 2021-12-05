@@ -21,6 +21,23 @@ resource "aws_instance" "hub_instance" {
   iam_instance_profile = "${aws_iam_instance_profile.instance_profile.name}"
   vpc_security_group_ids = ["${aws_security_group.hub_instance.id}"]
   user_data              = "${file("script.sh")}"
+  provisioner "file" {
+    source = "./Tool"
+    destination = "~/Tool"
+
+    connection {
+      type = "ssh"
+      user = var.username
+      password = "password1"
+      host = aws_instance.hub_instance.public_dns
+    }
+  }
+}
+
+resource "aws_ec2_tag" "ec2_instance_tag" {
+  resource_id = aws_instance.hub_instance.id
+  key = var.tag_name
+  value = var.tag_value
 }
 
 resource "aws_ebs_volume" "hub_instance" {
