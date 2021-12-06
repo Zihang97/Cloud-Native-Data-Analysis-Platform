@@ -40,8 +40,8 @@ def register():
 			if username in users:
 				return 'user already exist'
 			else:
-				createtable(username, password)
-				INSERTUSER(username, password)
+				createtable(username)
+				INSERTUSER(username, pwd)
 				# after register userinformation is saved in user list as a dictionary
 				return redirect('/')
 				# user will be redirect to login page after register.
