@@ -77,7 +77,7 @@ Release #4 (due by Week 13) - [Demo #4](https://drive.google.com/file/d/1tiLg_HV
 - Use Terraform to extract and upload data in storage
 - Expand on platform functionality
 
-Release #5 (due by Week 15):
+Release #5 (due by Week 15) - [Demo #5](https://drive.google.com/file/d/1DxxGCVDlaMd5ekCfQa83RFkedqxjimLA/view?usp=sharing):
 - Final Product and report
 
 ** **
