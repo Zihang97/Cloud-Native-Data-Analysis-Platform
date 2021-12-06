@@ -45,8 +45,9 @@ Strech Goals:
 
 ## 5. Acceptance criteria
 Minimum acceptance criteria is a self service platform that can:  
+- Provide a compute environment for data analysis tasks.
 - Extract data from a cloud storage service and return it.
-- Support standardised data science software (tensorflow, BigQuery etc).
+- Support standardized data science software (tensorflow, BigQuery etc).
 - Allocate storage and computation resources to ETL pipelnes based on user requirement.
 - Implement security controls to enable authorization requirements 
 
@@ -78,7 +79,8 @@ Release #4 (due by Week 13) - [Demo #4](https://drive.google.com/file/d/1tiLg_HV
 - Expand on platform functionality
 
 Release #5 (due by Week 15) - [Demo #5](https://drive.google.com/file/d/1DxxGCVDlaMd5ekCfQa83RFkedqxjimLA/view?usp=sharing):
-- Final Product and report
+- Implement web interface
+- Prepare final product 
 
 ** **
 
