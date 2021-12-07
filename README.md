@@ -108,6 +108,9 @@ Release #5 (due by Week 15) - [Demo #5](https://drive.google.com/file/d/1DxxGCVD
 
 ** **
 
+## User Instructions
+[User Instructions Wiki page](https://github.com/Zihang97/CS-EC528-Project/wiki/User-Instructions)
+
 ## Deployment Instructions
 [Deployment Instructions Wiki page](https://github.com/Zihang97/CS-EC528-Project/wiki/Deployment-Instructions)
 
