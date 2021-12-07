@@ -82,6 +82,8 @@ Release #5 (due by Week 15) - [Demo #5](https://drive.google.com/file/d/1DxxGCVD
 - Implement web interface
 - Prepare final product 
 
+[Final Presentation](https://drive.google.com/file/d/1vmF2zCBQljw7ob3cfSC4_X1Tvx2MI8ES/view?usp=sharing)
+
 ** **
 
 ## Mentors
