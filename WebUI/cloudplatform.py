@@ -92,4 +92,4 @@ def updatepipeline(name, id, encryption):
 	return render_template("return_update.html", name=name, encryption=encryption)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(host="0.0.0.0")
