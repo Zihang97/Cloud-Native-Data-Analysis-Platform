@@ -3,13 +3,17 @@
 ## 1. Vision and Goals Of The Project:
 The Self Service Cloud-Native Data Analysis Platform is a project to build an end-to-end data analysis platform using managed services considering the tradeoffs they offer.
 
+Our project aims to satisfy real world use cases of managed data science technology to accomplish data analysis tasks. The cloud toolkit is constantly growing and data scientists must consider the tradeoffs of managed services in order to select a toolkit that meets their specific requirements. Through researching data science application and cloud technologies, along with following guidelines set by our mentors, our team will target specific data analysis use cases and build an end-to-end data analysis platform for use by data scientists.
+
 Goals:
 - Explore the variety of managed services that exist for each component (Compute, Storage, Data Analysis, Security, and UI) and make selections based on our use-case requirements
 - Develop each component using selected managed services
-- Develop infrastructure that can handle an end-to-end data analysis platform use case:
+- Provide capability to accomplish a realworld, end-to-end, data analysis use case
+- Implement infrastructure that can:
   - Pull and store data in a storage solution
   - Perform transform operations and analysis on data
-  - Leverage standardized data science software (Tensorflow, BigQuery, etc.)
+  - Leverage standardized data science software (Tensorflow, Jupyter, etc.)
+  - Secure data and implement authorization requirements
 
 ** **
 
@@ -23,38 +27,56 @@ It doesn’t target:
 ** **
 
 ## 3.   Scope and Features Of The Project:
+- Compute
+ - Provide a compute environment using IaaS solutions
+ - Does not need to provide several compute options
+- Storage
+ - Provide cloud storage solution
+ - Users must be able to push and pull data from one or more sources
+- Data Analysis
+ - Support ability to run scripts (Python) to transform and analyze data
+ - Users are free to install tools and services on their compute environment, beyond what we provide
+- Security
+ - Authorization settings to control which users can access and modify specific data
+ - Platform is not HIPAA compliant
+ - Fine-grained access control between users is not provided 
+- User Interface
+ - Web interface through which users can register to our platform
+ - Does not provide capability to perform data analysis tasks, users must SSH into their individual compute environments
+ - Provides limited capability to control individaul cloud resources
 - Programmatic infrastructure management and orchestration using Terraform
-- Leverage standardized software to perform data analysis
-- Provide storage solutions for user data to push/pull data from one or more sources
-- Support ability to run scripts (Python) to transform and analyze data
-- Security: Authorization settings to control which users can access and modify data
-- Ability for multiple users to work simultaneously and independently
 
 ** **
 
 ## 4. Solution Concept
+The core concept behind this project is to develop an end-to-end data analysis platform that uses various cloud resources, data analysis tools, and other technologies to provide a managed service for use by data scientists. Users of our platform will find that it is a far more efficient method of setting up data analysis environment and will enable them to complete certain data science tasks. The platform will not be an all-encompassing solution, but will have to make certain tradeoffs based on requirements from our mentors and what our team learns through research. 
+
 High-level outline of the solution:
-- Storage for Data: Cloud-native technologies like AWS S3/GCP GCS/ DynamoDB/Spanner
-- Computing Engine: Use existing IaaS solutions like AWS EC2 or GCP (can also use Container solution) 
-- Data Analysis: Use data analysis platforms like Jupyter and Pandas to support machine learning codes of Tensorflow/Pytorch. (We could start simple with sklearn just to test our pipeline)
-- Permission and Access Control: Provide security solutions between services and external access (Cloud IAM).  
-Strech Goals:
+- Compute: Use existing IaaS solutions like AWS EC2 or GCP (can also use Container solution) 
+- Storage: Cloud-native technologies like AWS S3/GCP GCS/ DynamoDB/Spanner
+- Data Analysis: Use data analysis platforms like Jupyter and Pandas to support machine learning programs of Tensorflow/Pytorch.
+- Permission and Access Control: Provide security solutions between services and external access (AWS IAM).  
 - Front-end UI: HTML/CSS/JS for webpage and  Python Flask for web application
+
+Architecture Diagram:
+
+<img width="516" alt="Screen Shot 2021-12-07 at 10 33 20 AM" src="https://user-images.githubusercontent.com/31962750/145058794-52f6be16-4347-4e7e-91e2-2b8fd941ad66.png">
 
 ** **
 
 ## 5. Acceptance criteria
 Minimum acceptance criteria is a self service platform that can:  
 - Provide a compute environment for data analysis tasks.
-- Extract data from a cloud storage service and return it.
-- Support standardized data science software (tensorflow, BigQuery etc).
-- Allocate storage and computation resources to ETL pipelnes based on user requirement.
+- Provide storage from which users can extract and store data.
+- Support standardized data science software (Tensorflow, Jupyter, etc).
+- Allocate storage and computation resources to ETL pipelines based on user requirement.
 - Implement security controls to enable authorization requirements 
 
 Stretch goals include:
 - Use this project to analyze Boston Open Data
-- Provide several compute and size options
+- Provide several compute and storage configurations
 - Build a user friendly UI to interact with the platform
+- Provide cloud infrastructure options from other cloud providers (Azure, Google Cloud Platform, etc.)
 
 ** **
 
@@ -82,9 +104,12 @@ Release #5 (due by Week 15) - [Demo #5](https://drive.google.com/file/d/1DxxGCVD
 - Implement web interface
 - Prepare final product 
 
-[Final Presentation](https://drive.google.com/file/d/1vmF2zCBQljw7ob3cfSC4_X1Tvx2MI8ES/view?usp=sharing)
+[Final Presentation](https://drive.google.com/file/d/1yjObzGVAR7Fl3WGwDz3c3uYNAbbqh16p/view)
 
 ** **
+
+## Deployment Instructions
+[Deployment Instructions Wiki page](https://github.com/Zihang97/CS-EC528-Project/wiki/Deployment-Instructions)
 
 ## Mentors
 - Dan Hyland: dan.hyland@twosigma.com
