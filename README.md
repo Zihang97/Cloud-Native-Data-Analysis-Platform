@@ -13,6 +13,7 @@ Goals:
   - Pull and store data in a storage solution
   - Perform transform operations and analysis on data
   - Leverage standardized data science software (Tensorflow, Jupyter, etc.)
+  - Secure data and implement authorization requirements
 
 ** **
 
