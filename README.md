@@ -28,23 +28,23 @@ It doesn’t target:
 
 ## 3.   Scope and Features Of The Project:
 - Compute
- - Provide a compute environment using IaaS solutions
- - Does not need to provide several compute options
+  - Provide a compute environment using IaaS solutions
+  - Does not need to provide several compute options
 - Storage
- - Provide cloud storage solution
- - Users must be able to push and pull data from one or more sources
+  - Provide cloud storage solution
+  - Users must be able to push and pull data from one or more sources
 - Data Analysis
- - Support ability to run scripts (Python) to transform and analyze data
- - Users are free to install tools and services on their compute environment, beyond what we provide
+  - Support ability to run scripts (Python) to transform and analyze data
+  - Users are free to install tools and services on their compute environment, beyond what we provide
 - Security
- - Authorization settings to control which users can access and modify specific data
- - Platform is not HIPAA compliant
- - Fine-grained access control between users is not provided 
+  - Authorization settings to control which users can access and modify specific data
+  - Platform is not HIPAA compliant
+  - Fine-grained access control between users is not provided 
 - User Interface
- - Web interface through which users can register to our platform
- - Does not provide capability to perform data analysis tasks, users must SSH into their individual compute environments
- - Provides limited capability to control individaul cloud resources
-- Programmatic infrastructure management and orchestration using Terraform
+  - Web interface through which users can register to our platform
+  - Does not provide capability to perform data analysis tasks, users must SSH into their individual compute environments
+  - Provides limited capability to control individaul cloud resources
+  - Programmatic infrastructure management and orchestration using Terraform
 
 ** **
 
