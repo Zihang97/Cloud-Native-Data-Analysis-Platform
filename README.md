@@ -1,4 +1,4 @@
-# CS/EC528-Project
+#  Cloud-Native Data Analysis Platform
 
 ## 1. Vision and Goals Of The Project:
 The Self Service Cloud-Native Data Analysis Platform is a project to build an end-to-end data analysis platform using managed services considering the tradeoffs they offer.
